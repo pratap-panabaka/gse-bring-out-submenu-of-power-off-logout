@@ -7,9 +7,11 @@
   "settings-schema": "org.gnome.shell.extensions.bring-out-submenu-of-power-off-logout",
   "shell-version": [
     "45",
-    "46"
+    "46",
+    "47",
+    "48"
   ],
   "url": "https://github.com/PRATAP-KUMAR/bring-out-submenu-of-power-off-logout",
   "uuid": "BringOutSubmenuOfPowerOffLogoutButton@pratap.fastmail.fm",
-  "version": 58
+  "version": 61
 }
