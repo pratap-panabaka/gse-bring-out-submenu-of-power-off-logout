@@ -11,18 +11,6 @@
             <summary>Turn ON if you wish to remove Suspend Item from system's menu.</summary>
             <description>Suspend Item</description>
         </key>
-        <!-- Hibernation  -->
-        <key name="hide-hybrid-sleep-button" type="b">
-            <default>true</default>
-            <summary>Turn Off if you wish to show HybridSleep Item from systems' menu.</summary>
-            <description>Restart Item</description>
-        </key>
-        <key name="hide-hibernate-button" type="b">
-            <default>true</default>
-            <summary>Turn Off if you wish to show Hibernation Item from system's menu.</summary>
-            <description>Power Item</description>
-        </key>
-        <!--  -->
         <key name="hide-switch-user-button" type="b">
             <default>false</default>
             <summary>Turn ON if you wish to remove SwitchUser Item from system's menu.</summary>
@@ -43,10 +31,10 @@
             <summary>Turn ON if you wish to remove Power Item from system's menu.</summary>
             <description>Power Item</description>
         </key>
-        <key name="show-tooltip" type="b">
-            <default>true</default>
-            <summary>Turn ON if you wish to show tooltip for action buttons.</summary>
-            <description>Tooltip</description>
+        <key name="show-original-power-button" type="b">
+            <default>false</default>
+            <summary>Turn ON only if you are using other extensions that add menu items into the original power button.</summary>
+            <description>Original Power Item</description>
         </key>
     </schema>
 </schemalist>
