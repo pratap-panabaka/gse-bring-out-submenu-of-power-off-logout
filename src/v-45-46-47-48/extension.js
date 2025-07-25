@@ -5,12 +5,11 @@ import * as Main from 'resource:///org/gnome/shell/ui/main.js';
 
 import BringoutMenu from './BringoutMenu.js';
 
-let modifiedMenu = null;
 let sourceId = null;
 
 export default class BringoutExtension extends Extension {
     _modifySystemItem() {
-        modifiedMenu = new BringoutMenu(
+        this._modifiedMenu = new BringoutMenu(
             this._settings,
             this._gettext,
             this._pgettext
@@ -38,9 +37,9 @@ export default class BringoutExtension extends Extension {
     }
 
     disable() {
-        modifiedMenu._destroy();
-        modifiedMenu = null;
-        modifiedMenu.destroy();
+        this._modifiedMenu?._destroy();
+        this._modifiedMenu?.destroy();
+        this._modifiedMenu = null;
 
         if (sourceId) {
             GLib.Source.remove(sourceId);

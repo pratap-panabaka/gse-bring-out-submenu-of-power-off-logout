@@ -7,7 +7,7 @@ export default class BringoutExtensionPreferences extends ExtensionPreferences {
     fillPreferencesWindow(window) {
         window._settings = this.getSettings();
 
-        window.set_default_size(800, 600);
+        window.set_default_size(800, 700);
         window.search_enabled = true;
 
         let page = new Adw.PreferencesPage();
