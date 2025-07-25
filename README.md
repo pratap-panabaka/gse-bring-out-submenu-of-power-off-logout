@@ -1,5 +1,10 @@
 ### Bring Out Submenu Of Power Off Button - Extension (GNOME V45 and above)
 
+Extension v63 update
+1. Added option for keeping the original power button if you have other extensions that creates menu items in the original power button
+2. Removed tooltips, added icons to the extension settings so that you know what the buttons does
+3. Removed translations
+
 ### Install
 ```
 git clone https://github.com/pratap-panabaka/gse-bring-out-submenu-of-power-off-logout
