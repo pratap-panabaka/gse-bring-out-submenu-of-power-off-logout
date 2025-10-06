@@ -15,7 +15,8 @@ export default class BringoutExtensionPreferences extends ExtensionPreferences {
 
         const hideButtonsGroup = new Adw.PreferencesGroup({
             title: 'Hide the buttons as you like',
-            description: 'Please note that the click actions on these buttons are based on the lockdown settings.\n/org/gnome/desktop/lockdown disable-lock-screen | disable-logout etc',
+            description: `Please note that the click actions on these buttons are based on the lockdown settings.
+                          /org/gnome/desktop/lockdown disable-lock-screen | disable-logout etc`,
         });
 
         const lockButtonRow = new Adw.SwitchRow({
@@ -44,7 +45,7 @@ export default class BringoutExtensionPreferences extends ExtensionPreferences {
 
         const restartButtonRow = new Adw.SwitchRow({
             title: 'Restart Button',
-            icon_name: 'system-restart-symbolic',
+            icon_name: 'system-reboot-symbolic',
         });
         hideButtonsGroup.add(restartButtonRow);
 
